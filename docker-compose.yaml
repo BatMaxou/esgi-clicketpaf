@@ -1,0 +1,11 @@
+services:
+  node:
+    build: .
+    volumes:
+      - .:/app
+    restart: always
+    networks: 
+      - clicketpaf
+
+networks:
+  clicketpaf:

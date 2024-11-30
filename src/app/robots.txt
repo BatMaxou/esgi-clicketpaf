@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://clicketpaf.com/sitemap.xml
