@@ -108,10 +108,6 @@ const App = () => {
           </form>
       </section>
     </main>
-
-    <footer>
-      <p>© 2024 Click & Paf - Les Solutions qui Claquent. Tous droits réservés.</p>
-    </footer>
   </>;
 };
 
