@@ -79,14 +79,14 @@ const App = () => {
         <div className="blog-grid">
           <article className="blog-card">
               <a href="blog/5-astuces-pour-proteger-votre-pc.html" title="Lire : 5 astuces pour ne pas exploser votre PC">
-                  <h1>5 astuces pour ne pas exploser votre PC</h1>
+                  <h3>5 astuces pour ne pas exploser votre PC</h3>
                   <p>Découvrez comment prolonger la vie de votre ordinateur avec des astuces simples et efficaces.</p>
               </a>
           </article>
 
           <article className="blog-card">
               <a href="blog/les-pires-rates-en-bricolage.html" title="Lire : Les pires ratés en bricolage qu’on a dû réparer">
-                  <h1>Les pires ratés en bricolage qu’on a dû réparer</h1>
+                  <h3>Les pires ratés en bricolage qu’on a dû réparer</h3>
                   <p>Une collection hilarante des pires catastrophes en bricolage. Heureusement, on était là pour sauver la mise.</p>
               </a>
           </article>
