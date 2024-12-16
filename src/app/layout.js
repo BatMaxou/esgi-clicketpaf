@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import "./globals.css";
 
 export const metadata = {
@@ -9,8 +11,6 @@ export const metadata = {
   "og:image:height": "630",
   "twitter:card": "summary-large-image",
   "twitter:image": "/social-image.png",
-  "twitter:title": "Click & Paf - Les Solutions qui Claquent",
-  "twitter:description": "Des solutions rapides et efficaces pour vos problèmes quotidiens. Click & Paf : un, clic et c'est réglé !",
   icon: "/favicon.ico",
   "apple-touch-icon": "/apple-touch-icon.png",
   manifest: "/manifest.json",
@@ -19,6 +19,12 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return <html lang="fr">
+    <Head>
+      <meta property="og:title" content={metadata.title} />
+      <meta property="og:description" content={metadata.description} />
+      <meta property="twitter:title" content={metadata.title} />
+      <meta property="twitter:description" content={metadata.description} />
+    </Head>
     <body>
       {children}
       
