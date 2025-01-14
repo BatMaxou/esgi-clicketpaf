@@ -1,0 +1,11 @@
+@use './../../style/variables.scss' as v;
+
+.section {
+    width: 100%;
+    padding: 40px;
+
+    &.colored {
+        color: v.$white;
+        background-color: v.$main;
+    }
+}
