@@ -1,12 +1,32 @@
+import Article from "@/components/Article";
+import Header from "@/components/Header";
+import Button from "@/components/ui/Button";
+import { articles } from "@/data/articles";
+
 const App = () => {
+  const articlesArray = Object.entries(articles);
+  let articlesOfDay = [];  
+
+  if (articlesArray.length < 2) {
+    articlesOfDay = articlesArray;
+  } else {
+    const today = new Date(Date.now());
+    const daylyIndex = ((today.getDay() + (today.getMonth() + 1) + today.getFullYear()) % articlesArray.length);    
+
+    const indexes = [];
+    for (let i = 0; i < 2; i++) {
+      indexes.push((daylyIndex + i) % articlesArray.length);
+    }
+    
+    articlesOfDay = indexes.map(index => articlesArray[index]);
+  }
+
+
   return <>
-    <header>
-      <div className="container">
-          <h1>Click & Paf</h1>
-          <p className="slogan">Un clic, et paf, c’est réglé !</p>
-          <a href="#services" className="btn-main">Découvrez nos services</a>
-      </div>
-    </header>
+    <Header title={'Click & Paf'}>
+        <p className="slogan">Un clic, et paf, c’est réglé !</p>
+        <Button href="#services">Découvrez nos services</Button>
+    </Header>
 
     <main>
       <section id="services" className="section">
@@ -43,57 +63,44 @@ const App = () => {
       </section>
 
       <section id="testimonials" className="section">
-          <h2>Témoignages</h2>
-          <p className="section-description">Rien de mieux que les retours de nos clients pour témoigner de l’efficacité de nos services. 
-              Qu’il s’agisse d’une réparation express, d’un meuble monté en un éclair, ou d’une déclaration administrative remplie sans stress, 
-              nos clients partagent leurs expériences avec humour et enthousiasme. 
-              Découvrez leurs histoires, et rejoignez la communauté de ceux qui cliquent et disent : « Paf, c’est réglé ! ».</p>
-          <div className="testimonial-grid">
-              <div className="testimonial-card">
-                  <p>“J’ai cliqué, et paf, mon évier ne fuit plus. Incroyable !”</p>
-                  <h4>- Sophie L.</h4>
-              </div>
-              <div className="testimonial-card">
-                  <p>“J’ai cliqué, et paf, mon évier ne fuit plus. Incroyable !”</p>
-                  <h4>- Julie L.</h4>
-              </div>
-              <div className="testimonial-card">
-                  <p>“J’ai cliqué, et paf, mon évier ne fuit plus. Incroyable !”</p>
-                  <h4>- Marie L.</h4>
-              </div>
-              <div className="testimonial-card">
-                  <p>“Je n’arrivais pas à remplir mes impôts, maintenant c’est fait, et j’ai même reçu un compliment du fisc.”</p>
-                  <h4>- Laurie P.</h4>
-              </div>
+        <h2>Témoignages</h2>
+        <p className="section-description">Rien de mieux que les retours de nos clients pour témoigner de l’efficacité de nos services. 
+            Qu’il s’agisse d’une réparation express, d’un meuble monté en un éclair, ou d’une déclaration administrative remplie sans stress, 
+            nos clients partagent leurs expériences avec humour et enthousiasme. 
+            Découvrez leurs histoires, et rejoignez la communauté de ceux qui cliquent et disent : « Paf, c’est réglé ! ».</p>
+        <div className="testimonial-grid">
+          <div className="testimonial-card">
+            <p>“Grâce à ce service, j’ai enfin pu monter cette étagère Ikea sans perdre la tête. Merci !”</p>
+            <h4>- Thomas B.</h4>
           </div>
+          <div className="testimonial-card">
+            <p>“Mon ordinateur plantait tout le temps. Maintenant, il tourne comme une horloge !”</p>
+            <h4>- Emma R.</h4>
+          </div>
+          <div className="testimonial-card">
+            <p>“J’avais une fuite que personne ne pouvait résoudre, et là, c’était réglé en un clic. Magique !”</p>
+            <h4>- Lucas M.</h4>
+          </div>
+          <div className="testimonial-card">
+            <p>“Le jardin de mes rêves est enfin une réalité. Et tout ça sans me salir les mains !”</p>
+            <h4>- Clara T.</h4>
+          </div>
+          <div className="testimonial-card">
+            <p>“J’avais l’impression que c’était impossible de trouver un bon service en ligne, mais celui-ci m’a prouvé le contraire !”</p>
+            <h4>- Hugo C.</h4>
+          </div>
+        </div>
       </section>
 
       <section id="blog" className="section">
-        <h2>Blog & Actualités</h2>
-        <p className="section-description">
-          Découvrez des conseils pratiques, des astuces malines et des récits hilarants tirés de notre expérience sur le terrain.
-          Que vous cherchiez à prolonger la vie de vos appareils, éviter les pires ratés en bricolage, ou simplifier vos démarches administratives, nous avons ce qu’il vous faut.
-          Un espace plein d’idées pour rendre votre quotidien plus facile, une lecture à la fois !
-        </p>
+        <h2>Articles du jour</h2>
 
         <div className="blog-grid">
-          <article className="blog-card">
-              <a href="blog/5-astuces-pour-proteger-votre-pc.html" title="Lire : 5 astuces pour ne pas exploser votre PC">
-                  <h3>5 astuces pour ne pas exploser votre PC</h3>
-                  <p>Découvrez comment prolonger la vie de votre ordinateur avec des astuces simples et efficaces.</p>
-              </a>
-          </article>
-
-          <article className="blog-card">
-              <a href="blog/les-pires-rates-en-bricolage.html" title="Lire : Les pires ratés en bricolage qu’on a dû réparer">
-                  <h3>Les pires ratés en bricolage qu’on a dû réparer</h3>
-                  <p>Une collection hilarante des pires catastrophes en bricolage. Heureusement, on était là pour sauver la mise.</p>
-              </a>
-          </article>
+          {articlesOfDay.map(([slug, article]) => <Article key={slug} article={{ slug, ...article }} />)}
         </div>
 
         <div className="blog-all">
-          <a href="blog/index.html" className="btn-secondary" title="Voir tous les articles du blog">Voir tous les articles</a>
+            <Button href="/blog" main>Voir tous les articles</Button>
         </div>
       </section>
 
@@ -104,7 +111,7 @@ const App = () => {
               <input type="text" name="name" placeholder="Votre nom" required />
               <input type="email" name="email" placeholder="Votre email" required />
               <textarea name="message" placeholder="Décrivez votre problème..." required></textarea>
-              <button type="submit" className="btn-main">Envoyer</button>
+              <Button main type="submit">Envoyer</Button>
           </form>
       </section>
     </main>

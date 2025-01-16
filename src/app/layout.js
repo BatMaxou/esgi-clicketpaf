@@ -1,5 +1,5 @@
 import { URL_SSR } from "@/tools";
-import "./globals.css";
+import "@/style/globals.scss";
 
 const [title, description] = [
   "Click & Paf - Les Solutions qui Claquent",

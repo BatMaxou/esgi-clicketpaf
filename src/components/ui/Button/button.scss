@@ -1,0 +1,28 @@
+@use 'sass:color';
+@use '@/style/variables.scss' as v;
+
+.button {
+    background-color: v.$white;
+    color: v.$main;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: outline 0.2s linear;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        outline: 2px solid v.$white;
+    }
+
+    &--main {
+        background-color: v.$main;
+        color: v.$white;
+
+        &:hover, &:focus {
+            background-color: color.scale($color: v.$main, $alpha: -20%);
+            outline: none;
+        }    
+    }
+}

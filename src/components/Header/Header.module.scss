@@ -1,0 +1,13 @@
+@use './../../style/variables.scss' as v;
+
+.header {
+    background-color: v.$main;
+    color: v.$white;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
