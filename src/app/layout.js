@@ -1,51 +1,55 @@
 import { URL_SSR } from "@/tools";
 import "@/style/globals.scss";
 
-const [title, description] = [
+const [baseTitle, baseDescription] = [
   "Click & Paf - Les Solutions qui Claquent",
   "Des solutions rapides et efficaces pour vos problèmes quotidiens. Click & Paf : un, clic et c'est réglé !"
 ];
 
-export const metadata = {
-  title: title,
-  description: description,
-  manifest: '/manifest.json',
-  keywords: 'click, paf, solutions, clic, réglé, problèmes, quotidiens, click & paf, click and paf, click&paf, clickandpaf, solution, seul clic, bricolage, quotidien, rapide, efficace, service, express, assistance, domicile, SOS, sos, administratif, astuces, astuce, pratique',
-  robots: 'index, follow',
-  icons: [
-    {
-      rel: 'mask-icon',
-      url: '/favicon-32x32.svg',
-      color: '#000000',
+export const baseMetadata = (title = null, description = null, keywords = null, dynamic = false) => {
+  return {
+    ...(!dynamic ? {
+      title: title ?? baseTitle,
+      description: description ?? baseDescription,
+    } : {}),
+    manifest: '/manifest.json',
+    keywords: `${keywords ? `${keywords},` : '' }clicketpaf, click et paf, articles, blog, clicket paf, click etpaf, click, paf, solutions, clic, réglé, problèmes, quotidiens, click & paf, click and paf, click&paf, clickandpaf, solution, seul clic, bricolage, quotidien, rapide, efficace, service, express, assistance, domicile, SOS, sos, administratif, astuces, astuce, pratique`,
+    robots: 'index, follow',
+    icons: [
+      {
+        rel: 'mask-icon',
+        url: '/favicon-32x32.svg',
+        color: '#000000',
+      },
+    ],
+    twitter: {
+      card: 'summary_large_image',
+      title: title ?? baseTitle,
+      description: description ?? baseDescription,
+      images: [
+        {
+          url: `${URL_SSR}/social-image.png`,
+          width: 1200,
+          height: 630,
+          alt: title ?? baseTitle
+        },
+      ],
     },
-  ],
-  twitter: {
-    card: 'summary_large_image',
-    title: title,
-    description: description,
-    images: [
-      {
-        url: `${URL_SSR}/social-image.png`,
-        width: 1200,
-        height: 630,
-        alt: title
-      },
-    ],
-  },
-  openGraph: {
-    title: title,
-    description: description,
-    images: [
-      {
-        url: `${URL_SSR}/social-image.png`,
-        width: 1200,
-        height: 630,
-        alt: title
-      },
-    ],
-    url: URL_SSR,
-    type: 'website',
-  },
+    openGraph: {
+      title: title ?? baseTitle,
+      description: description ?? baseDescription,
+      images: [
+        {
+          url: `${URL_SSR}/social-image.png`,
+          width: 1200,
+          height: 630,
+          alt: title ?? baseTitle
+        },
+      ],
+      url: URL_SSR,
+      type: 'website',
+    }
+  };
 }
 
 const RootLayout = ({ children }) => {

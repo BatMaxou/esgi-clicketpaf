@@ -2,6 +2,9 @@ import Article from "@/components/Article";
 import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
 import { articles } from "@/data/articles";
+import { baseMetadata } from "./layout";
+
+export const metadata = baseMetadata();
 
 const App = () => {
   const articlesArray = Object.entries(articles);
@@ -20,7 +23,6 @@ const App = () => {
     
     articlesOfDay = indexes.map(index => articlesArray[index]);
   }
-
 
   return <>
     <Header title={'Click & Paf'}>

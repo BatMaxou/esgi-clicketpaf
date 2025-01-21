@@ -1,9 +1,15 @@
+import Link from "next/link";
+
 import NotFound from "@/app/not-found";
 import Article from "@/components/Article";
-import Component from "@/components/Component";
 import Header from "@/components/Header";
 import { articles } from "@/data/articles";
-import Link from "next/link";
+import { baseMetadata } from "../layout";
+
+export const metadata = baseMetadata(
+    'Blog & Actualités',
+    'Découvrez des conseils pratiques, des astuces malines et des récits hilarants tirés de notre expérience sur le terrain.',
+);
 
 const Articles = () => {
     if (!articles) {

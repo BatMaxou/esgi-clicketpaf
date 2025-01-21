@@ -1,8 +1,12 @@
+import Link from "next/link";
+
 import NotFound from "@/app/not-found";
 import Component from "@/components/Component";
 import Header from "@/components/Header";
 import { articles } from "@/data/articles";
-import Link from "next/link";
+import { baseMetadata } from "@/app/layout";
+
+export const metadata = baseMetadata(null, null, null, true);
 
 const Article = async (props) => {
     const slug = (await props.params)?.slug ?? null;
@@ -13,6 +17,8 @@ const Article = async (props) => {
     }    
 
     return <>
+        <title>{article.title}</title>
+        <meta name="description" content={article.shortDescription} />
         <Header title={article.title}>
             {article.shortDescription}
         </Header>
