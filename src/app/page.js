@@ -109,7 +109,7 @@ const App = () => {
       <section id="contact" className="section">
           <h2>Contactez-nous</h2>
           <p>Expliquez-nous votre problème (ou envoyez une photo si ça vous dépasse), et on s’en charge.</p>
-          <form action="#" method="post">
+          <form action="#">
               <input type="text" name="name" placeholder="Votre nom" required />
               <input type="email" name="email" placeholder="Votre email" required />
               <textarea name="message" placeholder="Décrivez votre problème..." required></textarea>
