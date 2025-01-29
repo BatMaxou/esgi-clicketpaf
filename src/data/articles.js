@@ -5,6 +5,7 @@ import gererLesDechetsMenagers from "./articles/gerer-les-dechets-menagers";
 import identifierProblemesMecaniquesVoiture from "./articles/identifier-problemes-mechaniques-voiture";
 import pourquoiMachineLaverPerdChaussettes from "./articles/pourquoi-machine-a-laver-perd-chaussettes";
 import trouverPapierToilettePasCher from "./articles/trouver-papier-toilette-pas-cher";
+import pourquoiVoituresCarburantsDifferents from "./articles/pourquoi-voitures-carburants-differents";
 
 export const articles = {
     '5-astuces-pour-proteger-votre-pc': cinqAstucesPourProtegerVotrePC,
@@ -14,4 +15,5 @@ export const articles = {
     'identifier-problemes-mecaniques-voiture': identifierProblemesMecaniquesVoiture,
     'pourquoi-machine-a-laver-perd-chaussettes': pourquoiMachineLaverPerdChaussettes,
     'trouver-papier-toilette-pas-cher': trouverPapierToilettePasCher,
+    'pourquoi-voitures-carburants-differents': pourquoiVoituresCarburantsDifferents,
 }
