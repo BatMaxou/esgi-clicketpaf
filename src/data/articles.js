@@ -7,6 +7,7 @@ import pourquoiMachineLaverPerdChaussettes from "./articles/pourquoi-machine-a-l
 import trouverPapierToilettePasCher from "./articles/trouver-papier-toilette-pas-cher";
 import pourquoiVoituresCarburantsDifferents from "./articles/pourquoi-voitures-carburants-differents";
 import commentBienSeTeindreLesCheveux from "./articles/comment-bien-se-teindre-les-cheveux";
+import bienConfigurerSonPC from "./articles/bien-configurer-son-pc";
 
 export const articles = {
     '5-astuces-pour-proteger-votre-pc': cinqAstucesPourProtegerVotrePC,
@@ -18,4 +19,5 @@ export const articles = {
     'trouver-papier-toilette-pas-cher': trouverPapierToilettePasCher,
     'pourquoi-voitures-carburants-differents': pourquoiVoituresCarburantsDifferents,
     'comment-bien-se-teindre-les-cheveux': commentBienSeTeindreLesCheveux,
+    'bien-configurer-son-pc': bienConfigurerSonPC,
 }
