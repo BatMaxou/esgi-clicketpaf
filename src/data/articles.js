@@ -8,6 +8,7 @@ import trouverPapierToilettePasCher from "./articles/trouver-papier-toilette-pas
 import pourquoiVoituresCarburantsDifferents from "./articles/pourquoi-voitures-carburants-differents";
 import commentBienSeTeindreLesCheveux from "./articles/comment-bien-se-teindre-les-cheveux";
 import bienConfigurerSonPC from "./articles/bien-configurer-son-pc";
+import fonctionnementBoissonsEnergisantes from "./articles/comment-fonctionne-boissons-energisantes";
 
 export const articles = {
     '5-astuces-pour-proteger-votre-pc': cinqAstucesPourProtegerVotrePC,
@@ -20,4 +21,5 @@ export const articles = {
     'pourquoi-voitures-carburants-differents': pourquoiVoituresCarburantsDifferents,
     'comment-bien-se-teindre-les-cheveux': commentBienSeTeindreLesCheveux,
     'bien-configurer-son-pc': bienConfigurerSonPC,
+    'comment-fonctionne-boissons-energisantes': fonctionnementBoissonsEnergisantes,
 }
