@@ -10,6 +10,7 @@ import commentBienSeTeindreLesCheveux from "./articles/comment-bien-se-teindre-l
 import bienConfigurerSonPC from "./articles/bien-configurer-son-pc";
 import fonctionnementBoissonsEnergisantes from "./articles/comment-fonctionne-boissons-energisantes";
 import chansonsQuiRestentEnTete from "./articles/pourquoi-chansons-restent-en-tete";
+import septProblemesMachineACafe from "./articles/les-7-problemes-les-plus-frequents-d-une-machine-a-cafe";
 
 export const articles = {
     '5-astuces-pour-proteger-votre-pc': cinqAstucesPourProtegerVotrePC,
@@ -24,4 +25,5 @@ export const articles = {
     'bien-configurer-son-pc': bienConfigurerSonPC,
     'comment-fonctionne-boissons-energisantes': fonctionnementBoissonsEnergisantes,
     'pourquoi-chansons-restent-en-tete': chansonsQuiRestentEnTete,
+    'les-7-problemes-les-plus-frequents-d-une-machine-a-cafe': septProblemesMachineACafe,
 }
