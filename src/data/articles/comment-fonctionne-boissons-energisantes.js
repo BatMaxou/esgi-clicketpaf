@@ -59,7 +59,8 @@ const fonctionnementBoissonsEnergisantes = {
         "effetsALongTermeSection",
         "consommationEtSportSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-02-01 18:00:00',
 };
 
 export default fonctionnementBoissonsEnergisantes;

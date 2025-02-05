@@ -60,7 +60,8 @@ const piresRatesEnBricolage = {
         "decoSection",
         "nouvelleSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-16 12:30:00',
 };
 
 export default piresRatesEnBricolage;

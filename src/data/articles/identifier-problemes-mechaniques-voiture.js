@@ -59,7 +59,8 @@ const identifierProblemesMecaniquesVoiture = {
         "electriciteSection",
         "entretienPreventifSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-25 12:00:00',
 };
 
 export default identifierProblemesMecaniquesVoiture;

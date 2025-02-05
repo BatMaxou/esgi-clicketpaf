@@ -43,7 +43,8 @@ const pourquoiVoituresCarburantsDifferents = {
         "evolutionTechnologiqueSection",
         "impactEnvironnementalSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-29 12:00:00',
 };
 
 export default pourquoiVoituresCarburantsDifferents;

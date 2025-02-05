@@ -62,7 +62,8 @@ const cinqAstucesPourProtegerVotrePC = {
         "vigilanceSection",
         "educationSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-16 12:00:00',
 };
 
 export default cinqAstucesPourProtegerVotrePC;

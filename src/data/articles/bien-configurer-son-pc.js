@@ -57,7 +57,8 @@ const bienConfigurerSonPC = {
         "gestionLogicielsApplicationsSection",
         "sauvegardeMaintenanceSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-31 18:00:00',
 };
 
 export default bienConfigurerSonPC;

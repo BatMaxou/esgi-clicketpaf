@@ -5,6 +5,7 @@ import Article from "@/components/Article";
 import Header from "@/components/Header";
 import { articles } from "@/data/articles";
 import { baseMetadata } from "../layout";
+import { LdJson } from "@/components/LdJson";
 
 export const metadata = baseMetadata(
     'Blog & Actualités',
@@ -14,7 +15,9 @@ export const metadata = baseMetadata(
 const Articles = () => {
     if (!articles) {
         return <NotFound />
-    }    
+    }
+
+    const orderedArticles = Object.entries(articles).reverse();    
 
     return <>
         <Header title="Blog & Actualités">
@@ -34,12 +37,14 @@ const Articles = () => {
             </li>
         </ul>
         <main className="section">
+            <h2>Blog</h2>
             <ul className="blog-grid">
-                {Object.entries(articles).reverse().map(([slug, article]) => <li key={slug}>
+                {orderedArticles.map(([slug, article]) => <li key={slug}>
                     <Article article={{ slug, ...article }} />
                 </li>)}
             </ul>
         </main>
+        <LdJson data={orderedArticles} type={'ARTICLE_LIST'} />
     </>
 }
 

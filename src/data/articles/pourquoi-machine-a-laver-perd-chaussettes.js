@@ -49,7 +49,8 @@ const pourquoiMachineLaverPerdChaussettes = {
         "solutionsSection",
         "impactEnvironnementalSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-26 12:00:00',
 };
 
 export default pourquoiMachineLaverPerdChaussettes;

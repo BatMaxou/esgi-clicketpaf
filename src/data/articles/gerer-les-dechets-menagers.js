@@ -54,7 +54,8 @@ const gererLesDechetsMenagers = {
         "temoignageSection",
         "initiativesLocalesSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-24 12:00:00',
 };
 
 export default gererLesDechetsMenagers;

@@ -5,6 +5,7 @@ import Component from "@/components/Component";
 import Header from "@/components/Header";
 import { articles } from "@/data/articles";
 import { baseMetadata } from "@/app/layout";
+import { LdJson } from "@/components/LdJson";
 
 export const metadata = baseMetadata(null, null, null, true);
 
@@ -46,6 +47,8 @@ const Article = async (props) => {
                 return <Component key={component} {...content} />;
             })}
         </main>
+
+        <LdJson data={article} type={'ARTICLE'} />
     </>
 }
 

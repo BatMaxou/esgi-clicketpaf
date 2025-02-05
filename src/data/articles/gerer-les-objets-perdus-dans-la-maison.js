@@ -48,7 +48,8 @@ const gererLesObjetsPerdusDansLaMaison = {
         "imageOnlySection1",
         "preventionSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-23 12:00:00',
 };
 
 export default gererLesObjetsPerdusDansLaMaison;

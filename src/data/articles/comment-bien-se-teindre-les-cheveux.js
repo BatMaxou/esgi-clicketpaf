@@ -57,7 +57,8 @@ const commentBienSeTeindreLesCheveux = {
         "entretienCouleurSection",
         "erreursCourantesSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-30 12:00:00',
 };
 
 export default commentBienSeTeindreLesCheveux;

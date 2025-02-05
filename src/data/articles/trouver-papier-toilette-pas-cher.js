@@ -53,7 +53,8 @@ const trouverPapierToilettePasCher = {
         "comparatifQualiteSection",
         "astucesEconomiesSection",
         "conclusionSection"
-    ]
+    ],
+    date: '2025-01-28 12:00:00',
 };
 
 export default trouverPapierToilettePasCher;

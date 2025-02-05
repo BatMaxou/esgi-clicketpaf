@@ -52,7 +52,8 @@ const chansonsQuiRestentEnTete = {
     "impactEmotionnelSection",
     "commentSEnDeFaireSection",
     "conclusionSection"
-  ]
+  ],
+  date: '2025-02-03 18:00:00',
 };
 
 export default chansonsQuiRestentEnTete;

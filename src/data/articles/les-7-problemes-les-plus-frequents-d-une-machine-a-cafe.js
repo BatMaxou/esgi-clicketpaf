@@ -60,7 +60,8 @@ const septProblemesMachineACafe = {
         "probleme6",
         "probleme7",
         "conclusion"
-    ]
+    ],
+    date: '2025-02-04 18:00:00',
 };
 
 export default septProblemesMachineACafe;
