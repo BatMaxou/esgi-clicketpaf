@@ -28,6 +28,7 @@ const formatArticleListData = (articles, originUrl) => {
 const formatArticleData = (article) => {
   return {
     '@type': 'Article',
+    author: 'Click & Paf',
     name: article.title,
     description: article.shortDescription,
     contentReferenceTime: (new Date(article.date)).toISOString(),
