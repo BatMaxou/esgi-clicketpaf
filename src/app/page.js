@@ -86,23 +86,23 @@ const App = () => {
         <div className="testimonial-grid">
           <div className="testimonial-card">
             <blockquote>“Grâce à ce service, j’ai enfin pu monter cette étagère Ikea sans perdre la tête. Merci !”</blockquote>
-            <h4>- Thomas B.</h4>
+            <h3>- Thomas B.</h3>
           </div>
           <div className="testimonial-card">
             <blockquote>“Mon ordinateur plantait tout le temps. Maintenant, il tourne comme une horloge !”</blockquote>
-            <h4>- Emma R.</h4>
+            <h3>- Emma R.</h3>
           </div>
           <div className="testimonial-card">
             <blockquote>“J’avais une fuite que personne ne pouvait résoudre, et là, c’était réglé en un clic. Magique !”</blockquote>
-            <h4>- Lucas M.</h4>
+            <h3>- Lucas M.</h3>
           </div>
           <div className="testimonial-card">
             <blockquote>“Le jardin de mes rêves est enfin une réalité. Et tout ça sans me salir les mains !”</blockquote>
-            <h4>- Clara T.</h4>
+            <h3>- Clara T.</h3>
           </div>
           <div className="testimonial-card">
             <blockquote>“J’avais l’impression que c’était impossible de trouver un bon service en ligne, mais celui-ci m’a prouvé le contraire !”</blockquote>
-            <h4>- Hugo C.</h4>
+            <h3>- Hugo C.</h3>
           </div>
         </div>
       </section>
