@@ -58,7 +58,12 @@ const RootLayout = ({ children }) => {
       {children}
       
       <footer>
-        <p>© 2024 Click & Paf - Les Solutions qui Claquent. Tous droits réservés.</p>
+        <p>Nous contacter</p>
+        <address>
+          <a href="mailto:clicketpaf.team@gmail.com">clicketpaf.team@gmail.com</a><br />
+          <a href="tel:+33634806993">06 34 80 69 93</a>
+        </address>
+        <p>© 2025 Click & Paf - Les Solutions qui Claquent. Tous droits réservés.</p>
       </footer>  
     </body>
   </html>

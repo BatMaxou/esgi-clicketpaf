@@ -1,6 +1,7 @@
 import Article from "@/components/Article";
 import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
+import Image from "@/components/Image";
 import { articles } from "@/data/articles";
 import { baseMetadata } from "./layout";
 
@@ -8,16 +9,16 @@ export const metadata = baseMetadata();
 
 const App = () => {
   const articlesArray = Object.entries(articles);
-  let articlesOfDay = [];  
+  let articlesOfDay = [];
 
-  if (articlesArray.length < 2) {
+  if (articlesArray.length < 4) {
     articlesOfDay = articlesArray;
   } else {
     const today = new Date(Date.now());
-    const daylyIndex = ((today.getDay() + (today.getMonth() + 1) + today.getFullYear()) % articlesArray.length);    
+    const daylyIndex = ((today.getDay() + (today.getMonth() + 1) + today.getFullYear()) % articlesArray.length);
 
     const indexes = [];
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 4; i++) {
       indexes.push((daylyIndex + i) % articlesArray.length);
     }
     
@@ -31,6 +32,18 @@ const App = () => {
     </Header>
 
     <main>
+      <section id="blog" className="section">
+        <h2>Articles du jour</h2>
+
+        <div className="blog-grid">
+          {articlesOfDay.map(([slug, article]) => <Article key={slug} article={{ slug, ...article }} />)}
+        </div>
+
+        <div className="blog-all">
+            <Button href="/blog" main>Voir tous les articles</Button>
+        </div>
+      </section>
+
       <section id="services" className="section">
           <h2>Nos Services</h2>
           <p className="section-description">Chez Click & Paf, nous résolvons vos problèmes du quotidien en un rien de temps. 
@@ -38,7 +51,7 @@ const App = () => {
               nos experts interviennent rapidement pour vous simplifier la vie. Avec un seul clic, bénéficiez d’un service efficace, fiable et toujours avec une touche d’humour.</p>
           <div className="service-grid">
               <div className="service-card">
-                  <img src="/images/repair.webp" alt="Réparations express" />
+                  <Image src="/images/repair.webp" alt="Réparations express" />
                   <h3>Réparations Express <br/>Votre Solution Rapide et Fiable</h3>
                   <p>Vous avez une fuite d’eau, un ordinateur qui ne s’allume plus ou un appareil électroménager capricieux ? 
                       Pas de panique ! Avec Click & Paf, nos experts interviennent rapidement pour résoudre vos problèmes, où que vous soyez. 
@@ -46,7 +59,7 @@ const App = () => {
                   </p>
               </div>
               <div className="service-card">
-                  <img src="/images/handyman.webp" alt="Assistance à domicile" />
+                  <Image src="/images/handyman.webp" alt="Assistance à domicile" />
                   <h3>Assistance à Domicile <br/>Un Service Pratique pour Votre Quotidien</h3>
                   <p>Vous n’avez pas le temps de monter ce meuble flambant neuf ou de réaliser quelques petits travaux ? 
                       Pas de stress, notre service d’assistance à domicile est là pour vous simplifier la vie. 
@@ -54,7 +67,7 @@ const App = () => {
                   </p>
               </div>
               <div className="service-card">
-                  <img src="/images/admin.webp" alt="SOS administratif" />
+                  <Image src="/images/admin.webp" alt="SOS administratif" />
                   <h3>SOS Administratif <br/>Gagnez du Temps et de la Tranquillité</h3>
                   <p>Les formalités administratives peuvent être stressantes et chronophages. Avec Click & Paf, 
                       vous bénéficiez d’un accompagnement personnalisé pour toutes vos démarches. Déclarations, 
@@ -72,43 +85,31 @@ const App = () => {
             Découvrez leurs histoires, et rejoignez la communauté de ceux qui cliquent et disent : « Paf, c’est réglé ! ».</p>
         <div className="testimonial-grid">
           <div className="testimonial-card">
-            <p>“Grâce à ce service, j’ai enfin pu monter cette étagère Ikea sans perdre la tête. Merci !”</p>
+            <blockquote>“Grâce à ce service, j’ai enfin pu monter cette étagère Ikea sans perdre la tête. Merci !”</blockquote>
             <h4>- Thomas B.</h4>
           </div>
           <div className="testimonial-card">
-            <p>“Mon ordinateur plantait tout le temps. Maintenant, il tourne comme une horloge !”</p>
+            <blockquote>“Mon ordinateur plantait tout le temps. Maintenant, il tourne comme une horloge !”</blockquote>
             <h4>- Emma R.</h4>
           </div>
           <div className="testimonial-card">
-            <p>“J’avais une fuite que personne ne pouvait résoudre, et là, c’était réglé en un clic. Magique !”</p>
+            <blockquote>“J’avais une fuite que personne ne pouvait résoudre, et là, c’était réglé en un clic. Magique !”</blockquote>
             <h4>- Lucas M.</h4>
           </div>
           <div className="testimonial-card">
-            <p>“Le jardin de mes rêves est enfin une réalité. Et tout ça sans me salir les mains !”</p>
+            <blockquote>“Le jardin de mes rêves est enfin une réalité. Et tout ça sans me salir les mains !”</blockquote>
             <h4>- Clara T.</h4>
           </div>
           <div className="testimonial-card">
-            <p>“J’avais l’impression que c’était impossible de trouver un bon service en ligne, mais celui-ci m’a prouvé le contraire !”</p>
+            <blockquote>“J’avais l’impression que c’était impossible de trouver un bon service en ligne, mais celui-ci m’a prouvé le contraire !”</blockquote>
             <h4>- Hugo C.</h4>
           </div>
         </div>
       </section>
 
-      <section id="blog" className="section">
-        <h2>Articles du jour</h2>
-
-        <div className="blog-grid">
-          {articlesOfDay.map(([slug, article]) => <Article key={slug} article={{ slug, ...article }} />)}
-        </div>
-
-        <div className="blog-all">
-            <Button href="/blog" main>Voir tous les articles</Button>
-        </div>
-      </section>
-
       <section id="contact" className="section">
           <h2>Contactez-nous</h2>
-          <p>Expliquez-nous votre problème (ou envoyez une photo si ça vous dépasse), et on s’en charge.</p>
+          <p>Expliquez-nous votre problème (ou envoyez une photo par mail si ça vous dépasse), et on s’en charge.</p>
           <form action="#">
               <input type="text" name="name" placeholder="Votre nom" required />
               <input type="email" name="email" placeholder="Votre email" required />

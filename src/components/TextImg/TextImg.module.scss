@@ -12,4 +12,16 @@
     > * {
         width: 50%;
     }
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+
+        &--left {
+            flex-direction: column-reverse;
+        }
+
+        > * {
+            width: 100%;
+        }
+    }
 }
