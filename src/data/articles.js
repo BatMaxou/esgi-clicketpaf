@@ -12,6 +12,7 @@ import fonctionnementBoissonsEnergisantes from "./articles/comment-fonctionne-bo
 import chansonsQuiRestentEnTete from "./articles/pourquoi-chansons-restent-en-tete";
 import septProblemesMachineACafe from "./articles/les-7-problemes-les-plus-frequents-d-une-machine-a-cafe";
 import guideParachutisme from "./articles/le-guide-du-parachutisme";
+import reduireConsommationElectricite from "./articles/reduire-consommation-electricite";
 
 export const articles = {
     '5-astuces-pour-proteger-votre-pc': cinqAstucesPourProtegerVotrePC,
@@ -28,4 +29,5 @@ export const articles = {
     'pourquoi-chansons-restent-en-tete': chansonsQuiRestentEnTete,
     'les-7-problemes-les-plus-frequents-d-une-machine-a-cafe': septProblemesMachineACafe,
     'le-guide-du-parachutisme': guideParachutisme,
+    'reduire-consommation-electricite': reduireConsommationElectricite,
 }
