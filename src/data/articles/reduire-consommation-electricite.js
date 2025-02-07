@@ -1,6 +1,6 @@
 import { Components } from "@/enum";
 
-const exampleTemplate = {
+const reduireConsommationElectricite = {
   title: "Comment réduire efficacement votre consommation d’électricité",
   shortDescription:
     "Découvrez des conseils pratiques pour réduire votre consommation d’électricité à la maison et faire des économies tout en préservant l’environnement.",
@@ -123,4 +123,4 @@ const exampleTemplate = {
   date: "2025-01-26 15:00:00",
 };
 
-export default exampleTemplate;
+export default reduireConsommationElectricite;
