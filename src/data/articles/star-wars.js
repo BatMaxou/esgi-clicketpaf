@@ -118,6 +118,7 @@ const starWars = {
     "droidsAndTheirRoles",
     "finalThoughts",
   ],
+  date: '2025-02-08 21:00:00',
 };
 
 export default starWars;
