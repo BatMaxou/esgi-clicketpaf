@@ -15,6 +15,7 @@ import guideParachutisme from "./articles/le-guide-du-parachutisme";
 import reduireConsommationElectricite from "./articles/reduire-consommation-electricite";
 import cuisineSaison from "./articles/cuisine-de-saison";
 import starWars from "./articles/star-wars";
+import partageFoyer from "./articles/partage-foyer";
 
 export const articles = {
     '5-astuces-pour-proteger-votre-pc': cinqAstucesPourProtegerVotrePC,
@@ -34,4 +35,5 @@ export const articles = {
     'reduire-consommation-electricite': reduireConsommationElectricite,
     'cuisine-de-saison': cuisineSaison,
     'star-wars': starWars,
+    'partage-foyer': partageFoyer,
 }
