@@ -16,24 +16,31 @@ import reduireConsommationElectricite from "./articles/reduire-consommation-elec
 import cuisineSaison from "./articles/cuisine-de-saison";
 import starWars from "./articles/star-wars";
 import partageFoyer from "./articles/partage-foyer";
+import vieVoisinage from "./articles/vie-voisinage";
 
 export const articles = {
-    '5-astuces-pour-proteger-votre-pc': cinqAstucesPourProtegerVotrePC,
-    'pires-rates-en-bricolage': piresRatesEnBricolage,
-    'gerer-les-objets-perdus-dans-la-maison': gererLesObjetsPerdusDansLaMaison,
-    'gerer-les-dechets-menagers': gererLesDechetsMenagers,
-    'identifier-problemes-mecaniques-voiture': identifierProblemesMecaniquesVoiture,
-    'pourquoi-machine-a-laver-perd-chaussettes': pourquoiMachineLaverPerdChaussettes,
-    'trouver-papier-toilette-pas-cher': trouverPapierToilettePasCher,
-    'pourquoi-voitures-carburants-differents': pourquoiVoituresCarburantsDifferents,
-    'comment-bien-se-teindre-les-cheveux': commentBienSeTeindreLesCheveux,
-    'bien-configurer-son-pc': bienConfigurerSonPC,
-    'comment-fonctionne-boissons-energisantes': fonctionnementBoissonsEnergisantes,
-    'pourquoi-chansons-restent-en-tete': chansonsQuiRestentEnTete,
-    'les-7-problemes-les-plus-frequents-d-une-machine-a-cafe': septProblemesMachineACafe,
-    'le-guide-du-parachutisme': guideParachutisme,
-    'reduire-consommation-electricite': reduireConsommationElectricite,
-    'cuisine-de-saison': cuisineSaison,
-    'star-wars': starWars,
-    'partage-foyer': partageFoyer,
-}
+  "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
+  "pires-rates-en-bricolage": piresRatesEnBricolage,
+  "gerer-les-objets-perdus-dans-la-maison": gererLesObjetsPerdusDansLaMaison,
+  "gerer-les-dechets-menagers": gererLesDechetsMenagers,
+  "identifier-problemes-mecaniques-voiture":
+    identifierProblemesMecaniquesVoiture,
+  "pourquoi-machine-a-laver-perd-chaussettes":
+    pourquoiMachineLaverPerdChaussettes,
+  "trouver-papier-toilette-pas-cher": trouverPapierToilettePasCher,
+  "pourquoi-voitures-carburants-differents":
+    pourquoiVoituresCarburantsDifferents,
+  "comment-bien-se-teindre-les-cheveux": commentBienSeTeindreLesCheveux,
+  "bien-configurer-son-pc": bienConfigurerSonPC,
+  "comment-fonctionne-boissons-energisantes":
+    fonctionnementBoissonsEnergisantes,
+  "pourquoi-chansons-restent-en-tete": chansonsQuiRestentEnTete,
+  "les-7-problemes-les-plus-frequents-d-une-machine-a-cafe":
+    septProblemesMachineACafe,
+  "le-guide-du-parachutisme": guideParachutisme,
+  "reduire-consommation-electricite": reduireConsommationElectricite,
+  "cuisine-de-saison": cuisineSaison,
+  "star-wars": starWars,
+  "partage-foyer": partageFoyer,
+  "vie-voisinage": vieVoisinage,
+};
