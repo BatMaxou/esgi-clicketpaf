@@ -17,6 +17,7 @@ import cuisineSaison from "./articles/cuisine-de-saison";
 import starWars from "./articles/star-wars";
 import partageFoyer from "./articles/partage-foyer";
 import vieVoisinage from "./articles/vie-voisinage";
+import invasionZombie from "./articles/invasion-zombie";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -43,4 +44,5 @@ export const articles = {
   "star-wars": starWars,
   "partage-foyer": partageFoyer,
   "vie-voisinage": vieVoisinage,
+  "invasion-zombie": invasionZombie,
 };
