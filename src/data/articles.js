@@ -18,6 +18,7 @@ import starWars from "./articles/star-wars";
 import partageFoyer from "./articles/partage-foyer";
 import vieVoisinage from "./articles/vie-voisinage";
 import invasionZombie from "./articles/invasion-zombie";
+import codeConduite from "./articles/code-conduite";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -45,4 +46,5 @@ export const articles = {
   "partage-foyer": partageFoyer,
   "vie-voisinage": vieVoisinage,
   "invasion-zombie": invasionZombie,
+  "code-conduite": codeConduite,
 };
