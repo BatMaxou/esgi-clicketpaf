@@ -19,6 +19,7 @@ import partageFoyer from "./articles/partage-foyer";
 import vieVoisinage from "./articles/vie-voisinage";
 import invasionZombie from "./articles/invasion-zombie";
 import codeConduite from "./articles/code-conduite";
+import productiviteEnTeletravail from "./articles/productivite-en-teletravail";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -47,4 +48,5 @@ export const articles = {
   "vie-voisinage": vieVoisinage,
   "invasion-zombie": invasionZombie,
   "code-conduite": codeConduite,
+  "productivite-en-teletravail": productiviteEnTeletravail,
 };
