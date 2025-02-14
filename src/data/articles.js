@@ -20,6 +20,7 @@ import vieVoisinage from "./articles/vie-voisinage";
 import invasionZombie from "./articles/invasion-zombie";
 import codeConduite from "./articles/code-conduite";
 import productiviteEnTeletravail from "./articles/productivite-en-teletravail";
+import saintValentin from "./articles/saint-valentin";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -49,4 +50,5 @@ export const articles = {
   "invasion-zombie": invasionZombie,
   "code-conduite": codeConduite,
   "productivite-en-teletravail": productiviteEnTeletravail,
+  "saint-valentin": saintValentin,
 };
