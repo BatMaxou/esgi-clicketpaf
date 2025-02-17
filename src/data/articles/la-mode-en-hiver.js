@@ -22,7 +22,7 @@ const laModeEnHiver = {
       type: Components.TEXT_IMAGE,
       content:
         "Chaque saison apporte son lot de tendances et l’hiver ne fait pas exception. Cette année, la mode hivernale est marquée par des pièces oversize, des matières nobles comme la laine et le cachemire, ainsi que des coloris sobres rehaussés de touches éclatantes. Le layering, ou superposition de vêtements, est un incontournable pour un look à la fois chaud et stylé. Les manteaux longs en laine, les pulls en maille épaisse et les bottes hautes dominent les podiums. En parallèle, les accessoires comme les écharpes XXL et les bonnets en laine se déclinent dans des couleurs neutres et intemporelles. Les créateurs misent également sur des imprimés classiques revisités, tels que le tartan ou le pied-de-poule, pour un style intemporel. Associer différentes textures et matières permet d’apporter une touche d’originalité tout en restant dans l’élégance.",
-      src: "/images/articles/mode-hiver/layering.webp",
+      src: "/images/articles/la-mode-en-hiver/layering.webp",
       alt: "Un homme superposant plusieurs couches de vêtements pour une tenue hivernale élégante et chaude.",
       left: false,
     },
@@ -35,7 +35,7 @@ const laModeEnHiver = {
       type: Components.TEXT_IMAGE,
       content:
         "Certains vêtements sont incontournables pour composer une garde-robe hivernale complète. Parmi eux, le manteau en laine reste un classique indémodable, parfait pour allier chaleur et élégance. Le pull en cachemire ou en laine mérinos offre un confort optimal et une grande douceur. Les pantalons en velours ou en denim épais sont aussi de mise pour affronter le froid avec style. Côté chaussures, les bottes en cuir ou les sneakers doublées de fourrure assurent un bon maintien thermique. Enfin, les accessoires comme les gants en cuir et les écharpes oversize complètent une tenue avec raffinement. Miser sur des basiques de qualité garantit des looks intemporels et durables. Investir dans des pièces bien coupées permet de rester élégant saison après saison.",
-      src: "/images/articles/mode-hiver/accessoires-hiver.webp",
+      src: "/images/articles/la-mode-en-hiver/accessoires-hiver.webp",
       alt: "Un assortiment d’accessoires hivernaux élégants, comprenant des écharpes, gants et bonnets.",
       left: true,
     },
