@@ -23,6 +23,7 @@ import productiviteEnTeletravail from "./articles/productivite-en-teletravail";
 import saintValentin from "./articles/saint-valentin";
 import leBienEtreMental from "./articles/le-bien-etre-mental";
 import laModeEnHiver from "./articles/la-mode-en-hiver";
+import iaAuTravail from "./articles/ia-au-travail";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -55,4 +56,5 @@ export const articles = {
   "saint-valentin": saintValentin,
   "le-bien-etre-mental": leBienEtreMental,
   "la-mode-en-hiver": laModeEnHiver,
+  "l-utilisation-de-l-ia-au-travail": iaAuTravail,
 };
