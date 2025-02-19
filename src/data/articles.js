@@ -24,6 +24,7 @@ import saintValentin from "./articles/saint-valentin";
 import leBienEtreMental from "./articles/le-bien-etre-mental";
 import laModeEnHiver from "./articles/la-mode-en-hiver";
 import iaAuTravail from "./articles/ia-au-travail";
+import laRelationClient from "./articles/la-relation-client";
 import leRespectDesHeuresDeTravail from "./articles/le-respect-des-heures-de-travail";
 
 export const articles = {
