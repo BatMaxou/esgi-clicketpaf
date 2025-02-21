@@ -26,6 +26,7 @@ import laModeEnHiver from "./articles/la-mode-en-hiver";
 import iaAuTravail from "./articles/ia-au-travail";
 import laRelationClient from "./articles/la-relation-client";
 import leRespectDesHeuresDeTravail from "./articles/le-respect-des-heures-de-travail";
+import laCauseAnimale from "./articles/la-cause-animale";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -61,4 +62,5 @@ export const articles = {
   "l-utilisation-de-l-ia-au-travail": iaAuTravail,
   "la-relation-client": laRelationClient,
   "le-respect-des-heures-de-travail": leRespectDesHeuresDeTravail,
+  "la-cause-animale": laCauseAnimale,
 };
