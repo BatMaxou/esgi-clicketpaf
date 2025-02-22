@@ -27,6 +27,7 @@ import iaAuTravail from "./articles/ia-au-travail";
 import laRelationClient from "./articles/la-relation-client";
 import leRespectDesHeuresDeTravail from "./articles/le-respect-des-heures-de-travail";
 import laCauseAnimale from "./articles/la-cause-animale";
+import motoVsVoiture from "./articles/moto-vs-voiture";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -63,4 +64,5 @@ export const articles = {
   "la-relation-client": laRelationClient,
   "le-respect-des-heures-de-travail": leRespectDesHeuresDeTravail,
   "la-cause-animale": laCauseAnimale,
+  "moto-vs-voiture": motoVsVoiture,
 };
