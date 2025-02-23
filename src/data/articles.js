@@ -28,6 +28,7 @@ import laRelationClient from "./articles/la-relation-client";
 import leRespectDesHeuresDeTravail from "./articles/le-respect-des-heures-de-travail";
 import laCauseAnimale from "./articles/la-cause-animale";
 import motoVsVoiture from "./articles/moto-vs-voiture";
+import les5PlusBellesRandonnees from "./articles/les-5-plus-belles-randonnees";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -65,4 +66,5 @@ export const articles = {
   "le-respect-des-heures-de-travail": leRespectDesHeuresDeTravail,
   "la-cause-animale": laCauseAnimale,
   "moto-vs-voiture": motoVsVoiture,
+  "les-5-plus-belles-randonnees": les5PlusBellesRandonnees,
 };
