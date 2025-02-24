@@ -29,6 +29,7 @@ import leRespectDesHeuresDeTravail from "./articles/le-respect-des-heures-de-tra
 import laCauseAnimale from "./articles/la-cause-animale";
 import motoVsVoiture from "./articles/moto-vs-voiture";
 import les5PlusBellesRandonnees from "./articles/les-5-plus-belles-randonnees";
+import cinqPointsNegatifsDeLaConsommationDeTabac from "./articles/5-points-negatifs-de-la-consommation-de-tabac";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -67,4 +68,6 @@ export const articles = {
   "la-cause-animale": laCauseAnimale,
   "moto-vs-voiture": motoVsVoiture,
   "les-5-plus-belles-randonnees": les5PlusBellesRandonnees,
+  "5-points-negatifs-de-la-consommation-de-tabac":
+    cinqPointsNegatifsDeLaConsommationDeTabac,
 };
