@@ -28,6 +28,7 @@ import laRelationClient from "./articles/la-relation-client";
 import leRespectDesHeuresDeTravail from "./articles/le-respect-des-heures-de-travail";
 import laCauseAnimale from "./articles/la-cause-animale";
 import motoVsVoiture from "./articles/moto-vs-voiture";
+import les5PlusBellesRandonnees from "./articles/les-5-plus-belles-randonnees";
 import cinqPointsNegatifsDeLaConsommationDeTabac from "./articles/5-points-negatifs-de-la-consommation-de-tabac";
 import top5desseriesdefevrier2025 from "./articles/top-5-des-series-de-fevrier-2025";
 
