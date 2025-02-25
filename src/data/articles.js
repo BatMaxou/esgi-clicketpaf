@@ -29,6 +29,7 @@ import leRespectDesHeuresDeTravail from "./articles/le-respect-des-heures-de-tra
 import laCauseAnimale from "./articles/la-cause-animale";
 import motoVsVoiture from "./articles/moto-vs-voiture";
 import cinqPointsNegatifsDeLaConsommationDeTabac from "./articles/5-points-negatifs-de-la-consommation-de-tabac";
+import top5desseriesdefevrier2025 from "./articles/top-5-des-series-de-fevrier-2025";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -69,4 +70,5 @@ export const articles = {
   "les-5-plus-belles-randonnees": les5PlusBellesRandonnees,
   "5-points-negatifs-de-la-consommation-de-tabac":
     cinqPointsNegatifsDeLaConsommationDeTabac,
+  "top-5-des-series-de-fevrier-2025": top5desseriesdefevrier2025,
 };
