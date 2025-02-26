@@ -31,6 +31,7 @@ import motoVsVoiture from "./articles/moto-vs-voiture";
 import les5PlusBellesRandonnees from "./articles/les-5-plus-belles-randonnees";
 import cinqPointsNegatifsDeLaConsommationDeTabac from "./articles/5-points-negatifs-de-la-consommation-de-tabac";
 import top5desseriesdefevrier2025 from "./articles/top-5-des-series-de-fevrier-2025";
+import huitConseilsImportantsEnCuisine from "./articles/8-conseils-importants-en-cuisine";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -72,4 +73,5 @@ export const articles = {
   "5-points-negatifs-de-la-consommation-de-tabac":
     cinqPointsNegatifsDeLaConsommationDeTabac,
   "top-5-des-series-de-fevrier-2025": top5desseriesdefevrier2025,
+  "8-conseils-importants-en-cuisine": huitConseilsImportantsEnCuisine,
 };
