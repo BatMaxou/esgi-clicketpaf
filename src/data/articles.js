@@ -33,6 +33,7 @@ import cinqPointsNegatifsDeLaConsommationDeTabac from "./articles/5-points-negat
 import top5desseriesdefevrier2025 from "./articles/top-5-des-series-de-fevrier-2025";
 import huitConseilsImportantsEnCuisine from "./articles/8-conseils-importants-en-cuisine";
 import les5BossLesPlusDursDeldenRing from "./articles/les-5-boss-les-plus-durs-delden-ring";
+import les5BossLesPlusDursDeSekiro from "./articles/les-5-boss-les-plus-durs-de-sekiro";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -76,4 +77,5 @@ export const articles = {
   "top-5-des-series-de-fevrier-2025": top5desseriesdefevrier2025,
   "8-conseils-importants-en-cuisine": huitConseilsImportantsEnCuisine,
   "les-5-boss-les-plus-durs-delden-ring": les5BossLesPlusDursDeldenRing,
+  "les-5-boss-les-plus-durs-de-sekiro": les5BossLesPlusDursDeSekiro,
 };
