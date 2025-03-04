@@ -35,6 +35,7 @@ import huitConseilsImportantsEnCuisine from "./articles/8-conseils-importants-en
 import les5BossLesPlusDursDeldenRing from "./articles/les-5-boss-les-plus-durs-delden-ring";
 import les5BossLesPlusDursDeSekiro from "./articles/les-5-boss-les-plus-durs-de-sekiro";
 import cinqComportementsInsupportables from "./articles/5-comportements-insupportables";
+import dixConseilsPourReussirUnDemenagement from "./articles/10-conseil-pour-demenager";
 
 export const articles = {
   "5-astuces-pour-proteger-votre-pc": cinqAstucesPourProtegerVotrePC,
@@ -80,4 +81,6 @@ export const articles = {
   "les-5-boss-les-plus-durs-delden-ring": les5BossLesPlusDursDeldenRing,
   "les-5-boss-les-plus-durs-de-sekiro": les5BossLesPlusDursDeSekiro,
   "5-comportements-insupportables": cinqComportementsInsupportables,
+  "10-conseils-pour-reussir-son-demenagement":
+    dixConseilsPourReussirUnDemenagement,
 };
